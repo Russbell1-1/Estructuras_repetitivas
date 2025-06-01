@@ -5,10 +5,14 @@ int main(){
 	int n, aux=0;
 	cout<<"Ingrese el numero: ";
 	cin>>n;
-	while (n>0){
+	if (n<0){
+		cout<<"Numero no positivo";
+	} else {
+		while (n>0){
 		aux= aux + 1;
 		n=n/10;
+	    }
+	    cout<<"La cantidad de digitos es: "<<aux<<endl;
 	}
-	cout<<"La cantidad de digitos es: "<<aux<<endl;
 	return 0;
 }
